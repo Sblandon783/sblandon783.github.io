@@ -20,11 +20,27 @@
   <meta content="IE=Edge" http-equiv="X-UA-Compatible">
   <meta name="description" content="A new Flutter project.">
 
+  <!-- Color de la barra del navegador / barra de estado (Android, Chrome) -->
+  <meta name="theme-color" content="#1B4332">
+
+  <!-- Permite que el contenido se dibuje bajo la barra de estado en iOS -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+
   <!-- iOS meta tags & icons -->
   <meta name="mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="apple-mobile-web-app-title" content="gym_app">
   <link rel="apple-touch-icon" href="icons/Icon-192.png">
+
+  <style>
+    /* Pinta de verde el fondo de la página para que la franja de la
+       barra de estado (iOS PWA) se vea verde y no blanca. */
+    html, body {
+      margin: 0;
+      background-color: #1B4332;
+    }
+  </style>
 
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="favicon.png"/>
